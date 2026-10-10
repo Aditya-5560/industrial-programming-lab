@@ -9,7 +9,7 @@ This document tracks progress across the 16 modules in the **Logic Building with
 
 | Metric | Value |
 |---|---|
-| **Total Programs Completed** | **8** |
+| **Total Programs Completed** | **19** |
 | **Modules Started** | **1 / 16** |
 | **Current Active Module** | 01. Logic Building |
 
@@ -19,7 +19,7 @@ This document tracks progress across the 16 modules in the **Logic Building with
 
 | Section | Status | Programs |
 |---|---|---:|
-| 01. Logic Building | In Progress | 8 |
+| 01. Logic Building | In Progress | 19 |
 | 02. Arrays & Matrices | Not Started | 0 |
 | 03. Strings | Not Started | 0 |
 | 04. Bit Manipulation | Not Started | 0 |
