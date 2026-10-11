@@ -9,9 +9,9 @@ This document tracks progress across the 16 modules in the **Logic Building with
 
 | Metric | Value |
 |---|---|
-| **Total Programs Completed** | **19** |
-| **Modules Started** | **1 / 16** |
-| **Current Active Module** | 01. Logic Building |
+| **Total Programs Completed** | **50** |
+| **Modules Started** | **2 / 16** |
+| **Current Active Module** | 01. Logic Building, 10. Core Java |
 
 ---
 
@@ -19,7 +19,7 @@ This document tracks progress across the 16 modules in the **Logic Building with
 
 | Section | Status | Programs |
 |---|---|---:|
-| 01. Logic Building | In Progress | 19 |
+| 01. Logic Building | In Progress | 35 |
 | 02. Arrays & Matrices | Not Started | 0 |
 | 03. Strings | Not Started | 0 |
 | 04. Bit Manipulation | Not Started | 0 |
@@ -28,7 +28,7 @@ This document tracks progress across the 16 modules in the **Logic Building with
 | 07. Recursion | Not Started | 0 |
 | 08. Data Structure Implementation | Not Started | 0 |
 | 09. Searching & Sorting | Not Started | 0 |
-| 10. Core Java | Not Started | 0 |
+| 10. Core Java | In Progress | 15 |
 | 11. Java Collections | Not Started | 0 |
 | 12. File & System Programming | Not Started | 0 |
 | 13. Network Programming | Not Started | 0 |
@@ -42,4 +42,4 @@ This document tracks progress across the 16 modules in the **Logic Building with
 
 | Date | Module | Programs Added | Commit |
 |---|---|---:|---|
-| *Pending first batch* | — | 0 | — |
+| 2026-10-11 | 01. Logic Building, 10. Core Java | 31 | `5f53d5e` |
