@@ -1,14 +1,17 @@
 # Antigravity Project Instructions & Permanent Git Commit Policy
 # Repository: industrial-programming-lab (https://github.com/Aditya-5560/industrial-programming-lab)
 
-## 1. Core Operating Principles
-- **Role:** Repository organizer and documentation maintainer, NOT the programmer.
-- **Code Ownership:** The user writes, understands, debugs, and practices all code independently.
-- **NEVER MODIFY CODE (Absolute Rule):**
-  - Never rewrite algorithms, fix bugs, optimize, refactor, or rename variables.
-  - Never add/remove functionality, insert comments, or alter formatting/output.
-  - If a bug or warning is spotted (e.g., potential null pointer, memory leak), report it separately in the organization report. Do NOT touch the source code.
-- **No Fabrications:** Never fabricate code, progress, project functionality, or external repository links.
+## 1. Core Operating Principles & Mandatory Architecture Rules
+1. **The concept-first folder structure is mandatory:** The primary classification criterion is the program's actual learning objective, not its programming language. C, C++, and Java implementations of the same topic live together under that topic.
+2. **Language subfolders are determined by the file's actual programming language:** Under each concept directory, use `c/`, `cpp/`, or `java/` as appropriate. Never create empty language subfolders unnecessarily.
+3. **The primary concept determines the category:** First determine what the program teaches, then select the concept directory, and finally select the language subfolder.
+4. **CRITICAL: Java does not automatically mean Core Java:** The `10-core-java/java/` directory is EXCLUSIVELY for programs whose primary learning objective is a Core Java language feature or concept. Programs must go into their concept-specific directories when their primary objective is something else (e.g. logic building, arrays, strings, recursion, data structures, searching/sorting, collections, file I/O, networking, threads, OOP design, design patterns).
+5. **Universal application:** These rules apply to archive migrations, batch imports, and all future daily files placed in `daily-inbox/`.
+6. **Strict source-code and existing file preservation:** Never rewrite, reformat, or fix user code. Existing committed files and sequential numbering are permanent; never rename or renumber committed files.
+7. **No silent guesses:** Ambiguous cases must be reported in the organization report and left in `daily-inbox/` rather than guessed.
+8. **Organization does not authorize commits or pushes:** File movements and staging are strictly separate from Git commits and pushes.
+9. **Mandatory Conventional Commits:** Commits must follow the repository's meaningful Conventional Commit policy (strict differentiation of `feat`, `refactor`, `test`, `fix`, `docs`, `chore`).
+10. **Explicit user authorization required:** Commit and push operations strictly require explicit user instructions.
 
 ## 2. Daily Inbox Staging & Organization Workflow
 - **Inbox Location:** `daily-inbox/`
@@ -28,23 +31,26 @@
 - **Never Renumber Existing Files:** Once a file is committed, its filename remains permanent. Never rename existing `01-`, `02-`, etc., files just to sort or rearrange.
 - **Duplicate Detection:** Flag exact duplicates or likely duplicates; never delete or overwrite automatically.
 
-## 3. Conceptual Category Mapping
-1. `01-logic-building/`: Conditionals, loops, basic math logic, validation, flow control.
-2. `02-arrays-and-matrices/`: 1D/2D array operations, traversals, matrix manipulation.
-3. `03-strings/`: Character arrays, string algorithms, parsing, tokenization.
-4. `04-bit-manipulation/`: Bitwise ops, masking, binary logic.
-5. `05-memory-management/`: Pointers, pointer arithmetic, dynamic memory (`malloc`, `free`).
-6. `06-structures-and-generic-programming/`: Structs, unions, function pointers, C++ templates.
-7. `07-recursion/`: Recursive problem decomposition, call stack mechanics.
-8. `08-data-structure-implementation/`: Linked lists, stacks, queues, trees built from scratch.
-9. `09-searching-and-sorting/`: Linear/binary search, comparison & non-comparison sorts.
-10. `10-core-java/`: Java OOP fundamentals, JVM memory model, exception handling, standard APIs.
-11. `11-java-collections/`: Java Collections Framework (lists, sets, maps, iterators, generics).
-12. `12-file-and-system-programming/`: Streams, binary I/O, system utilities, virtual file system concepts.
-13. `13-network-programming/`: Sockets, TCP/UDP client-server implementations.
-14. `14-multithreading/`: Concurrency, synchronization, locks, thread pools.
-15. `15-object-oriented-design/`: Advanced OOP design, SOLID principles, class modeling.
-16. `16-design-patterns-and-lld/`: GoF design patterns, low-level design case studies.
+## 3. Mandatory Concept-First Category Mapping
+
+| Category | Primary Learning Objective | Example Topics | Language Subfolders |
+|---|---|---|---|
+| `01-logic-building/` | Conditionals, loops, math logic, validation, flow control, number problems, patterns | Addition, factors, prime, perfect numbers, digits, reverse number, pattern grids | `c/`, `cpp/`, `java/` |
+| `02-arrays-and-matrices/` | 1D/2D array operations, traversals, matrix manipulation | Array summation, min/max, linear search, matrix transformations, transpose, jagged arrays | `c/`, `cpp/`, `java/` |
+| `03-strings/` | Character arrays, string algorithms, parsing, tokenization | Character count, toggle case, string reverse, palindrome, anagram, word count | `c/`, `cpp/`, `java/` |
+| `04-bit-manipulation/` | Bitwise ops, masking, binary logic | Bitwise `&`, `\|`, `^`, `<<`, `>>`, mask generation, check bit on/off, toggle bit | `c/`, `cpp/`, `java/` |
+| `05-memory-management/` | Pointers, pointer arithmetic, dynamic memory | `malloc`, `calloc`, `realloc`, `free`, pointer referencing, call by address | `c/`, `cpp/` |
+| `06-structures-and-generic-programming/` | Structs, unions, function pointers, C++ templates | Struct memory layout, packing, `template<class T>`, generic functions | `c/`, `cpp/`, `java/` |
+| `07-recursion/` | Recursive problem decomposition, call stack mechanics | Recursive display, factorial, digit sum, recursive string reversal | `c/`, `cpp/`, `java/` |
+| `08-data-structure-implementation/` | Core data structures built from scratch | SinglyLL, DoublyLL, CircularLL, Stack, Queue, Binary Search Tree | `c/`, `cpp/`, `java/` |
+| `09-searching-and-sorting/` | Search algorithms and comparative sorting | Linear search, binary search, bubble sort, selection sort, insertion sort | `c/`, `cpp/`, `java/` |
+| `10-core-java/` | Core Java language features and JVM mechanics exclusively | Classes, objects, constructors, access modifiers, method overloading, interfaces, exception handling, command-line arguments | `java/` |
+| `11-java-collections/` | Java Collections Framework standard containers | `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `HashMap`, `Hashtable`, `Iterator` | `java/` |
+| `12-file-and-system-programming/` | Streams, binary I/O, system utilities, virtual file systems | C file system calls (`open`, `read`, `write`, `lseek`), CVFS, Java file streams | `c/`, `cpp/`, `java/` |
+| `13-network-programming/` | Sockets, TCP/UDP client-server implementations | ServerSocket, Socket, multi-client chat server, socket APIs in C | `c/`, `cpp/`, `java/` |
+| `14-multithreading/` | Concurrency, synchronization, locks, thread pools | Java `Thread`, `Runnable`, `synchronized`, C `pthread` | `c/`, `cpp/`, `java/` |
+| `15-object-oriented-design/` | Advanced OOP design, SOLID principles, domain modeling | StudyTracker entity architecture, class modeling, encapsulation hierarchies | `java/` |
+| `16-design-patterns-and-lld/` | GoF design patterns, low-level design case studies | ParkingLot Automation (Factory, Observer, Strategy, Singleton), Packer-Unpacker, Custom DBMS | `java/` |
 
 ## 4. Permanent Git Commit Convention & Type Policy
 
