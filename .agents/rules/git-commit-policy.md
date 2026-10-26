@@ -2,8 +2,8 @@
 # Repository: industrial-programming-lab (https://github.com/Aditya-5560/industrial-programming-lab)
 
 ## 1. Core Operating Principles & Mandatory Architecture Rules
-1. **The concept-first folder structure is mandatory:** The primary classification criterion is the program's actual learning objective, not its programming language. C, C++, and Java implementations of the same topic live together under that topic.
-2. **Language subfolders are determined by the file's actual programming language:** Under each concept directory, use `c/`, `cpp/`, or `java/` as appropriate. Never create empty language subfolders unnecessarily.
+1. **The concept-first folder structure is mandatory:** The primary classification criterion is the program's actual learning objective, not its programming language. C, C++, Java, and JavaScript implementations of the same topic live together under that topic.
+2. **Language subfolders are determined by the file's actual programming language:** Under each concept directory, use `c/`, `cpp/`, `java/`, or `js/` as appropriate. Never create empty language subfolders unnecessarily.
 3. **The primary concept determines the category:** First determine what the program teaches, then select the concept directory, and finally select the language subfolder.
 4. **CRITICAL: Java does not automatically mean Core Java:** The `10-core-java/java/` directory is EXCLUSIVELY for programs whose primary learning objective is a Core Java language feature or concept. Programs must go into their concept-specific directories when their primary objective is something else (e.g. logic building, arrays, strings, recursion, data structures, searching/sorting, collections, file I/O, networking, threads, OOP design, design patterns).
 5. **Universal application:** These rules apply to archive migrations, batch imports, and all future daily files placed in `daily-inbox/`.
@@ -21,12 +21,13 @@
     - DO NOT move, rename, modify, commit, or push any files.
   - `Organize today's programs`:
     - Process high-confidence programs.
-    - Dynamically create language subfolders (`c/`, `cpp/`, `java/`) under concept folders when needed.
+    - Dynamically create language subfolders (`c/`, `cpp/`, `java/`, `js/`) under concept folders when needed.
     - Rename newly added programs:
       - **C/C++ programs:** use the next available sequential number in that folder (`NN-descriptive-name.c` / `NN-descriptive-name.cpp`).
       - **Java programs:** use PascalCase without numeric prefixes (`DescriptiveName.java`), following Section 6.
+      - **JavaScript programs:** use the next available sequential number in that folder (`NN-descriptive-name.js`), lowercase and hyphen-separated, following Section 7.
     - Move files from `daily-inbox/` to target folders.
-    - Update `PROGRESS.md` with verified counts.
+    - Update `PROGRESS.md` with verified counts across all supported languages (C, C++, Java, JavaScript) and compartments.
     - DO NOT resolve ambiguities silently; leave ambiguous files in `daily-inbox/` and ask the user.
 - **Never Renumber Existing Files:** Once a file is committed, its filename remains permanent. Never rename existing `01-`, `02-`, etc., files just to sort or rearrange.
 - **Duplicate Detection:** Flag exact duplicates or likely duplicates; never delete or overwrite automatically.
@@ -35,22 +36,22 @@
 
 | Category | Primary Learning Objective | Example Topics | Language Subfolders |
 |---|---|---|---|
-| `01-logic-building/` | Conditionals, loops, math logic, validation, flow control, number problems, patterns | Addition, factors, prime, perfect numbers, digits, reverse number, pattern grids | `c/`, `cpp/`, `java/` |
-| `02-arrays-and-matrices/` | 1D/2D array operations, traversals, matrix manipulation | Array summation, min/max, linear search, matrix transformations, transpose, jagged arrays | `c/`, `cpp/`, `java/` |
-| `03-strings/` | Character arrays, string algorithms, parsing, tokenization | Character count, toggle case, string reverse, palindrome, anagram, word count | `c/`, `cpp/`, `java/` |
-| `04-bit-manipulation/` | Bitwise ops, masking, binary logic | Bitwise `&`, `\|`, `^`, `<<`, `>>`, mask generation, check bit on/off, toggle bit | `c/`, `cpp/`, `java/` |
+| `01-logic-building/` | Conditionals, loops, math logic, validation, flow control, number problems, patterns | Addition, factors, prime, perfect numbers, digits, reverse number, pattern grids | `c/`, `cpp/`, `java/`, `js/` |
+| `02-arrays-and-matrices/` | 1D/2D array operations, traversals, matrix manipulation | Array summation, min/max, linear search, matrix transformations, transpose, jagged arrays | `c/`, `cpp/`, `java/`, `js/` |
+| `03-strings/` | Character arrays, string algorithms, parsing, tokenization | Character count, toggle case, string reverse, palindrome, anagram, word count | `c/`, `cpp/`, `java/`, `js/` |
+| `04-bit-manipulation/` | Bitwise ops, masking, binary logic | Bitwise `&`, `\|`, `^`, `<<`, `>>`, mask generation, check bit on/off, toggle bit | `c/`, `cpp/`, `java/`, `js/` |
 | `05-memory-management/` | Pointers, pointer arithmetic, dynamic memory | `malloc`, `calloc`, `realloc`, `free`, pointer referencing, call by address | `c/`, `cpp/` |
-| `06-structures-and-generic-programming/` | Structs, unions, function pointers, C++ templates | Struct memory layout, packing, `template<class T>`, generic functions | `c/`, `cpp/`, `java/` |
-| `07-recursion/` | Recursive problem decomposition, call stack mechanics | Recursive display, factorial, digit sum, recursive string reversal | `c/`, `cpp/`, `java/` |
-| `08-data-structure-implementation/` | Core data structures built from scratch | SinglyLL, DoublyLL, CircularLL, Stack, Queue, Binary Search Tree | `c/`, `cpp/`, `java/` |
-| `09-searching-and-sorting/` | Search algorithms and comparative sorting | Linear search, binary search, bubble sort, selection sort, insertion sort | `c/`, `cpp/`, `java/` |
+| `06-structures-and-generic-programming/` | Structs, unions, function pointers, C++ templates | Struct memory layout, packing, `template<class T>`, generic functions | `c/`, `cpp/`, `java/`, `js/` |
+| `07-recursion/` | Recursive problem decomposition, call stack mechanics | Recursive display, factorial, digit sum, recursive string reversal | `c/`, `cpp/`, `java/`, `js/` |
+| `08-data-structure-implementation/` | Core data structures built from scratch | SinglyLL, DoublyLL, CircularLL, Stack, Queue, Binary Search Tree | `c/`, `cpp/`, `java/`, `js/` |
+| `09-searching-and-sorting/` | Search algorithms and comparative sorting | Linear search, binary search, bubble sort, selection sort, insertion sort | `c/`, `cpp/`, `java/`, `js/` |
 | `10-core-java/` | Core Java language features and JVM mechanics exclusively | Classes, objects, constructors, access modifiers, method overloading, interfaces, exception handling, command-line arguments | `java/` |
 | `11-java-collections/` | Java Collections Framework standard containers | `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `HashMap`, `Hashtable`, `Iterator` | `java/` |
-| `12-file-and-system-programming/` | Streams, binary I/O, system utilities, virtual file systems | C file system calls (`open`, `read`, `write`, `lseek`), CVFS, Java file streams | `c/`, `cpp/`, `java/` |
-| `13-network-programming/` | Sockets, TCP/UDP client-server implementations | ServerSocket, Socket, multi-client chat server, socket APIs in C | `c/`, `cpp/`, `java/` |
-| `14-multithreading/` | Concurrency, synchronization, locks, thread pools | Java `Thread`, `Runnable`, `synchronized`, C `pthread` | `c/`, `cpp/`, `java/` |
-| `15-object-oriented-design/` | Advanced OOP design, SOLID principles, domain modeling | StudyTracker entity architecture, class modeling, encapsulation hierarchies | `java/` |
-| `16-design-patterns-and-lld/` | GoF design patterns, low-level design case studies | ParkingLot Automation (Factory, Observer, Strategy, Singleton), Packer-Unpacker, Custom DBMS | `java/` |
+| `12-file-and-system-programming/` | Streams, binary I/O, system utilities, virtual file systems | C file system calls (`open`, `read`, `write`, `lseek`), CVFS, Java file streams | `c/`, `cpp/`, `java/`, `js/` |
+| `13-network-programming/` | Sockets, TCP/UDP client-server implementations | ServerSocket, Socket, multi-client chat server, socket APIs in C | `c/`, `cpp/`, `java/`, `js/` |
+| `14-multithreading/` | Concurrency, synchronization, locks, thread pools | Java `Thread`, `Runnable`, `synchronized`, C `pthread` | `c/`, `cpp/`, `java/`, `js/` |
+| `15-object-oriented-design/` | Advanced OOP design, SOLID principles, domain modeling | StudyTracker entity architecture, class modeling, encapsulation hierarchies | `java/`, `js/` |
+| `16-design-patterns-and-lld/` | GoF design patterns, low-level design case studies | ParkingLot Automation (Factory, Observer, Strategy, Singleton), Packer-Unpacker, Custom DBMS | `java/`, `js/` |
 
 ## 4. Permanent Git Commit Convention & Type Policy
 
@@ -121,7 +122,7 @@ When a batch contains multiple kinds of changes:
 Format: `<type>(<scope>): <specific description>`
 
 - **Scope Selection:** Choose a scope that accurately identifies the concept or area changed, derived from the actual code rather than blindly copying the parent folder name.
-  - Allowed scopes include: `arithmetic`, `arrays`, `strings`, `bit-manipulation`, `memory`, `conditionals`, `functions`, `pointers`, `recursion`, `linked-list`, `trees`, `java`, `java-oop`, `collections`, `threads`, `sockets`, `progress`, `organization`, `architecture`, `validation`.
+  - Allowed scopes include: `arithmetic`, `arrays`, `strings`, `bit-manipulation`, `memory`, `conditionals`, `functions`, `pointers`, `recursion`, `linked-list`, `trees`, `java`, `java-oop`, `javascript`, `collections`, `threads`, `sockets`, `progress`, `organization`, `architecture`, `validation`.
 - **Description Quality:**
   - Concise, specific, technically accurate, imperative mood.
   - Use clear action verbs: `implement`, `demonstrate`, `extract`, `correct`, `add`, `update`, `reclassify`.
@@ -194,4 +195,23 @@ After organizing Java files:
 - Compare original and final source code to confirm that only authorized class-name changes occurred.
 - Report every file renamed and every class identifier changed.
 - Explicitly report any program left in `daily-inbox/` because its rename was ambiguous.
-- Compilation checks may be performed when practical, but compilation failures must be reported rather than automatically fixed.\n
+- Compilation checks may be performed when practical, but compilation failures must be reported rather than automatically fixed.
+
+## 7. JavaScript Naming & Strict Source-Code Preservation Policy
+
+### A. JavaScript Filename Convention
+- **File extension:** Use `.js` exclusively for JavaScript source files.
+- **Naming style:** Use lowercase, hyphen-separated filenames with the next available sequential number in that folder (`NN-descriptive-name.js`).
+  - Examples: `01-display-message.js`, `02-addition-with-input.js`, `03-array-traversal.js`.
+  - Sequential numbering is folder-scoped, consistent with C/C++ practices. Never renumber existing committed files.
+- **No external frameworks or build tooling:** Standalone exercise scripts should execute with standard runtime environments (e.g. `node`) without creating unnecessary `package.json`, `node_modules`, or complex bundler infrastructure.
+
+### B. Strict Source-Code Preservation
+- JavaScript educational programs must be preserved exactly as written.
+- Antigravity is authorized ONLY to rename the file.
+- Antigravity is NOT authorized to make ANY code changes during organization:
+  - Do NOT modify program logic, variables, functions, or control flow.
+  - Do NOT wrap code in modules, closures, or classes unnecessarily.
+  - Do NOT add or remove `require`, `import`, or `export` statements.
+  - Do NOT reformat code, alter indentation, or modify whitespace.
+  - Do NOT fix syntax errors, runtime exceptions, or logical flaws.
