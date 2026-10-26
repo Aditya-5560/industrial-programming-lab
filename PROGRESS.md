@@ -9,32 +9,34 @@ This document tracks progress across the 16 modules in the **Logic Building with
 
 | Metric | Value |
 |---|---|
-| **Total Programs Completed** | **129** |
-| **Modules Started** | **2 / 16** |
-| **Current Active Module** | 01. Logic Building, 10. Core Java |
+| **Total Programs Completed** | **160** |
+| **Language Breakdown** | C: 83 \| C++: 0 \| Java: 46 \| JavaScript: 31 |
+| **Modules Started** | **3 / 16** |
+| **Current Active Module** | 01. Logic Building, 02. Arrays & Matrices, 10. Core Java |
 
 ---
 
 ## Module Breakdown
 
-| Section | Status | Programs |
-|---|---|---:|
-| 01. Logic Building | In Progress | 114 |
-| 02. Arrays & Matrices | Not Started | 0 |
-| 03. Strings | Not Started | 0 |
-| 04. Bit Manipulation | Not Started | 0 |
-| 05. Memory Management | Not Started | 0 |
-| 06. Structures & Generic Programming | Not Started | 0 |
-| 07. Recursion | Not Started | 0 |
-| 08. Data Structure Implementation | Not Started | 0 |
-| 09. Searching & Sorting | Not Started | 0 |
-| 10. Core Java | In Progress | 15 |
-| 11. Java Collections | Not Started | 0 |
-| 12. File & System Programming | Not Started | 0 |
-| 13. Network Programming | Not Started | 0 |
-| 14. Multithreading | Not Started | 0 |
-| 15. Object-Oriented Design | Not Started | 0 |
-| 16. Design Patterns & LLD | Not Started | 0 |
+| Compartment | C | C++ | Java | JavaScript | Compartment Total |
+|---|---:|---:|---:|---:|---:|
+| 01. Logic Building | 83 | 0 | 31 | 27 | 141 |
+| 02. Arrays & Matrices | 0 | 0 | 0 | 4 | 4 |
+| 03. Strings | 0 | 0 | 0 | 0 | 0 |
+| 04. Bit Manipulation | 0 | 0 | 0 | 0 | 0 |
+| 05. Memory Management | 0 | 0 | 0 | 0 | 0 |
+| 06. Structures & Generic Programming | 0 | 0 | 0 | 0 | 0 |
+| 07. Recursion | 0 | 0 | 0 | 0 | 0 |
+| 08. Data Structure Implementation | 0 | 0 | 0 | 0 | 0 |
+| 09. Searching & Sorting | 0 | 0 | 0 | 0 | 0 |
+| 10. Core Java | 0 | 0 | 15 | 0 | 15 |
+| 11. Java Collections | 0 | 0 | 0 | 0 | 0 |
+| 12. File & System Programming | 0 | 0 | 0 | 0 | 0 |
+| 13. Network Programming | 0 | 0 | 0 | 0 | 0 |
+| 14. Multithreading | 0 | 0 | 0 | 0 | 0 |
+| 15. Object-Oriented Design | 0 | 0 | 0 | 0 | 0 |
+| 16. Design Patterns & LLD | 0 | 0 | 0 | 0 | 0 |
+| **Overall Total** | **83** | **0** | **46** | **31** | **160** |
 
 ---
 
@@ -46,3 +48,4 @@ This document tracks progress across the 16 modules in the **Logic Building with
 | 2026-10-17 | 01. Logic Building | 32 | `bc24fd9` |
 | 2026-10-19 | 01. Logic Building | 24 | `6e2eba9` |
 | 2026-10-23 | 01. Logic Building | 23 | `ac86a7e` |
+| 2026-10-26 | 01. Logic Building, 02. Arrays & Matrices | 31 | `ad6958c` |
