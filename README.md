@@ -34,6 +34,7 @@ The repository covers fundamental to advanced software engineering topics:
 - **C**: Systems programming, memory management, pointers, and foundational data structures.
 - **C++**: Generic programming, templates, and object-oriented abstractions.
 - **Java**: Core platform, concurrency, networking, collections, and software design patterns.
+- **JavaScript**: Algorithmic problem solving, event-driven programming, and scripting logic.
 
 ---
 
@@ -62,7 +63,7 @@ The repository covers fundamental to advanced software engineering topics:
 
 ## Repository Structure
 
-Implementations are organized by technical concept rather than language, with language-specific directories added within each conceptual module:
+Implementations are organized by technical concept rather than language, with language-specific directories (`c/`, `cpp/`, `java/`, `js/`) added within each conceptual module:
 
 ```text
 industrial-programming-lab/
@@ -111,5 +112,5 @@ The focus is on writing clean, robust implementations from first principles, tho
 
 The repository is continuously updated as new implementations are added.
 
-- Detailed status per module: [Progress Tracker](PROGRESS.md)
+- Detailed status per module: [Progress Tracker](PROGRESS.md) (tracks verified completions across C, C++, Java, and JavaScript)
 - Complete curriculum sequence: [Learning Roadmap](ROADMAP.md)
