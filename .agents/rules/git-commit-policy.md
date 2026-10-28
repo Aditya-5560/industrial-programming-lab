@@ -30,7 +30,7 @@
     - Update `PROGRESS.md` with verified counts across all supported languages (C, C++, Java, JavaScript) and compartments.
     - DO NOT resolve ambiguities silently; leave ambiguous files in `daily-inbox/` and ask the user.
 - **Never Renumber Existing Files:** Once a file is committed, its filename remains permanent. Never rename existing `01-`, `02-`, etc., files just to sort or rearrange.
-- **Duplicate Detection:** Flag exact duplicates or likely duplicates; never delete or overwrite automatically.
+- **Duplicate Detection:** Flag exact duplicates or likely duplicates; never delete or overwrite automatically. For assignment questions, enforce Section 8: upload only programs that introduce different logic, problem domains, or structural architectures.
 
 ## 3. Mandatory Concept-First Category Mapping
 
@@ -215,3 +215,15 @@ After organizing Java files:
   - Do NOT add or remove `require`, `import`, or `export` statements.
   - Do NOT reformat code, alter indentation, or modify whitespace.
   - Do NOT fix syntax errors, runtime exceptions, or logical flaws.
+
+## 8. Assignment Questions & Duplicate Filtering Policy
+
+### A. Core Duplicate Filtering Principle
+- When organizing assignment questions or practice exercises, systematically compare each incoming program against existing implementations in the repository.
+- **Upload / organize the program ONLY if:**
+  1. It introduces a genuinely new problem statement, domain, or algorithm (e.g., electricity bill slabs, leap year, character case conversion, triangle validity, employee bonus).
+  2. It demonstrates a distinctly different control structure, algorithm, or architecture (e.g., negative input updaters, while-loop countdowns without counters, custom `BOOL` typedef predicates vs `void` printers, 3-way equality handling).
+- **Do NOT upload / organize the program if:**
+  1. It is an exact or functional duplicate of an existing program with identical logic, control flow, and purpose (e.g., simple fixed print loops, identical divisibility-by-5 checks, identical even/odd modulo tests).
+- Redundant duplicates must be clearly reported in the organization summary and omitted from the repository to prevent inflating program counts with identical solutions.
+
