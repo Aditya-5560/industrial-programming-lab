@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+void countFrequency(char *str)
+{
+    int iCountSmall = 0, iCountCapital = 0, iCountDigit = 0, iCountSpecial = 0;
+    while(*str != '\0')
+    {
+        if(*str >= 'a' && *str <= 'z') iCountSmall++;
+        else if(*str >= 'A' && *str <= 'Z') iCountCapital++;
+        else if(*str >= '0' && *str <= '9') iCountDigit++;
+        else iCountSpecial++;
+        str++;
+    }
+    printf("Small : %d \n",iCountSmall);
+    printf("Capital : %d \n",iCountCapital);
+    printf("Digit : %d \n",iCountDigit);
+    printf("Special : %d \n",iCountSpecial);
+}
+
+int main()
+{
+    char arr[100];
+
+    printf("Enter String : ");
+    scanf("%[^'\n']s",arr);
+
+    countFrequency(arr);
+    
+    return EXIT_SUCCESS;
+}
