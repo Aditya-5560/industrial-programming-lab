@@ -9,10 +9,10 @@ This document tracks progress across the 16 modules in the **Logic Building with
 
 | Metric | Value |
 |---|---|
-| **Total Programs Completed** | **287** |
+| **Total Programs Completed** | **312** |
 | **Language Breakdown** | C: 210 \| C++: 0 \| Java: 46 \| JavaScript: 31 |
-| **Modules Started** | **4 / 16** |
-| **Current Active Module** | 01. Logic Building, 02. Arrays & Matrices, 03. Strings, 10. Core Java |
+| **Modules Started** | **5 / 16** |
+| **Current Active Module** | 01. Logic Building, 02. Arrays & Matrices, 03. Strings, 06. Structures & Generic Programming, 10. Core Java |
 
 ---
 
@@ -20,12 +20,12 @@ This document tracks progress across the 16 modules in the **Logic Building with
 
 | Compartment | C | C++ | Java | JavaScript | Compartment Total |
 |---|---:|---:|---:|---:|---:|
-| 01. Logic Building | 171 | 0 | 31 | 27 | 229 |
+| 01. Logic Building | 172 | 14 | 31 | 27 | 244 |
 | 02. Arrays & Matrices | 0 | 0 | 0 | 4 | 4 |
 | 03. Strings | 39 | 0 | 0 | 0 | 39 |
 | 04. Bit Manipulation | 0 | 0 | 0 | 0 | 0 |
 | 05. Memory Management | 0 | 0 | 0 | 0 | 0 |
-| 06. Structures & Generic Programming | 0 | 0 | 0 | 0 | 0 |
+| 06. Structures & Generic Programming | 0 | 10 | 0 | 0 | 10 |
 | 07. Recursion | 0 | 0 | 0 | 0 | 0 |
 | 08. Data Structure Implementation | 0 | 0 | 0 | 0 | 0 |
 | 09. Searching & Sorting | 0 | 0 | 0 | 0 | 0 |
@@ -36,7 +36,7 @@ This document tracks progress across the 16 modules in the **Logic Building with
 | 14. Multithreading | 0 | 0 | 0 | 0 | 0 |
 | 15. Object-Oriented Design | 0 | 0 | 0 | 0 | 0 |
 | 16. Design Patterns & LLD | 0 | 0 | 0 | 0 | 0 |
-| **Overall Total** | **210** | **0** | **46** | **31** | **287** |
+| **Overall Total** | **211** | **24** | **46** | **31** | **312** |
 
 ---
 
@@ -53,3 +53,4 @@ This document tracks progress across the 16 modules in the **Logic Building with
 | 2026-10-28 | 01. Logic Building | 24 | `48d6581` |
 | 2026-11-02 | 01. Logic Building | 41 | `1ad54ae` |
 | 2026-11-06 | 03. Strings | 39 | `3d165b6` |
+| 2026-11-07 | 01. Logic Building, 06. Structures & Generic Programming | 25 | `13277a2` |
